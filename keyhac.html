@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>
+How to Use Emacs Style Key Binding in Windows 10
+</title>
+</head>
+
+<body>
+<h1>
+How to Use Emacs Style Key Binding in Windows 10
+</h1>
+
+Yoichi Hariguchi
+
+<h2>
+Software to Install
+</h2>
+
+<ul>
+  <li><a href="http://crftwr.github.io/keyhac/download/keyhac_176.zip">
+      keyhac</a> to change key binding
+  <li><a href="https://github.com/randyrants/sharpkeys/releases">
+      sharpkeys</a> to swap Caps Lock and Control
+</ul>
+
+
+<h2>
+Enabling Emacs Style Key Binding
+</h2>
+
+<ol>
+  <li>Extract "Keyhac"
+      (say in <b><code>/cygdrive/c/Program\ Files/keyhac-176</code></b>)
+  <li><b><code>cd /cygdrive/c/Program\ Files/keyhac-176</code></b>
+  <li><b><code>mv -i _config.py dot.config.py</code></b>
+  <li><b><code>wget http://www.hariguchi.org/emacs-win10/config.py</code></b>
+      Or download <a href="config.py">config.py</a> and put it in
+      <code>cd /cygdrive/c/Program\ Files/keyhac-176</code>
+  <li>Run Keyhac.
+</ol>
+
+
+<h2>
+Swapping Caps Lock and Left Control
+</h2>
+
+This is not about Emacs like key binding itself, but some
+people (like me) really want to have Control key on the left
+next to `a'. ShapKeys is useful to swap Caps Lock and
+Control and here is the procedure.
+
+<ol>
+  <li>Run "SharpKeys"
+  <li>Click "Add"
+  <li>Choose "Special: Caps Lock (00_3A)" in the "Map this key
+  (From key):" form, and "Special: Left Ctrl(00_1D)" in the "To
+  this key (To key):" form, then click "OK."<p>
+  <img src="sharpkeys-caps-ctrl.png" alt="Caps Lock to Control"
+  align="middle">
+  <li>Click "Add"
+  <li>Choose "Special: Left Ctrl(00_1D)" in the "Map this key
+  (From key):" form, and "Special: Caps Lock (00_3A)" in the "To
+  this key (To key):" form, then press "OK."<p>
+  <img src="sharpkeys-ctrl-caps.png" alt="Left Control to Caps
+  Lock" align="middle">
+  <li>The result should be like this.<p>
+  <img src="sharpkeys-result.png" alt="Result" align="middle">
+  <li>Click "Write to Registry."
+  <li>Click "Close."
+  <li>Reboot.
+</ol>
+
+Now Caps Lock and Left Control are supposed to be swapped.
+
+
+<hr>
+<p>
+[<a href="../">Home</a>]
+
+
+<hr>
+<address></address>
+<!-- hhmts start -->
+Last modified: Fri Oct  6 04:32:23 PDT 2017
+<!-- hhmts end -->
+</body> </html>
