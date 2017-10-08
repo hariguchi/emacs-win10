@@ -11,6 +11,10 @@
 ##  #lancherList_key = "A-l"
 ##  lancherList_key = "C-A-l"
 ##
+##  #window_switching_key = [["A-p", "A-n"]]
+##  window_switching_key = [["A-S-Tab", "A-Tab"]]
+##
+##
 ##                               nickname: fakeymacs
 ##
 ## Windows の操作を emacs のキーバインドで行うための設定（Keyhac版）ver.20170823_01
@@ -168,7 +172,7 @@ def configure(keymap):
                             "putty.exe",          # PuTTY
                             "ttermpro.exe",       # TeraTerm
                             "MobaXterm.exe"]      # MobaXterm
-                            
+
     # clipboard 監視の対象外とするアプリケーションソフトを指定する
     not_clipboard_target = ["EXCEL.EXE"]          # Excel
 
@@ -229,7 +233,8 @@ def configure(keymap):
     #   また、A-g もしくは A-Esc で切り替え画面の終了（キャンセル）となり、Altキーを離すか A-Enter で
     #   切り替えるウィンドウの確定となります。）
     # （デフォルトキーは、["A-S-Tab", "A-Tab"]）
-    window_switching_key = [["A-p", "A-n"]]
+    #window_switching_key = [["A-p", "A-n"]]
+    window_switching_key = [["A-S-Tab", "A-Tab"]]
 
     # アクティブウィンドウをディスプレイ間で移動するキーの組み合わせ（前、後 の順）を指定する（複数指定可）
     # （other_window_key に割り当てている A-o との連係した利用を想定し、A-S-o も割り当てています）
